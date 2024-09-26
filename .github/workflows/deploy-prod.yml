@@ -23,3 +23,4 @@ jobs:
           app_location: '/'
           api_location: 'build/server'
           output_location: 'build'
+          app_build_command: 'npm run prod:build'
