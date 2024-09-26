@@ -27,3 +27,5 @@ jobs:
           api_location: 'build/server'
           output_location: 'build'
           app_build_command: 'npm run dev:build'
+        env:
+          VITE_PASSWORD: ${{ secrets.VITE_PASSWORD }}
