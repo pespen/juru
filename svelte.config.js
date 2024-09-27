@@ -7,7 +7,6 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			// Default options are shown here. Customize as necessary.
 			pages: 'build',
 			assets: 'build',
 			fallback: null
