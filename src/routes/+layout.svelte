@@ -34,7 +34,7 @@
   <slot />
 {:else if isDev}
   <div class="flex flex-col items-center justify-center min-h-screen bg-light-1">
-    <h1 class="text-2xl text-light-5 font-bold mb-4">Skriv inn passord</h1>
+    <h1 class="text-2xl text-light-6 font-bold mb-4">Skriv inn passord</h1>
     <input type="password" bind:value={password} class="border p-2 mb-4" />
     <button on:click={handleLogin} class="bg-light-6 text-light-1 p-2">Logg inn</button>
     {#if errorMessage}
