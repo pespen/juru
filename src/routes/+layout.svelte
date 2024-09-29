@@ -12,17 +12,17 @@
 </script>
 
 {#if isAuthenticated}
-  <div class="flex flex-col min-h-screen bg-light-1">
+  <div class="flex flex-col min-h-screen">
     <Header />
 
-    <main class="container mx-auto p-4 flex-grow bg-light-1 max-w-7xl ">
+    <main class="container mx-auto p-10 md:p-20 flex-grow max-w-7xl ">
       <slot />
     </main>
 
-    <footer class="p-4 mt-8 bg-light-1">
+    <footer class="p-4 md:p-8 mt-8">
       <div class="text-center flex flex-col items-center">
         <hr class="border-gray-300 my-4 w-[60%]">
-        &copy; 2024 Juru. Alle rettigheter reservert.
+        <p class="text-light-6">&copy; 2024 Juru. Alle rettigheter reservert.</p>
       </div>
     </footer>
   </div>

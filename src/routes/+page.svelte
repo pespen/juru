@@ -1,3 +1,5 @@
 <div>
-
+  <h1 class="text-xl font-bold text-light-6">Hvilke tjenester tilbyr en juridisk direktør i Juru?</h1>
+  <p class="mt-4 text-light-6"> Vi er advokater med bakgrunn fra landets største forretningsadvokatfirmaer, samtidig som vi har vært ansatt i ulike selskaper og organisasjoner og jobbet med juridisk rådgivning opp mot ledelse og styre fra innsiden. Dette gir oss en unik forståelse for hvordan muligheter og utfordringer må løses i forhold til eksterne advokater, som ikke kjenner virksomheten og fokuserer på det teknisk-juridiske problemet.</p>
+  <p class="mt-4 text-light-6">De fleste problemer har imidlertid såvel økonomiske, tekniske som kommersielle utfordringer, for ikke å snakke om å få ledelse, styre og ansatte med på valgt strategi. Dette er vi i motsetning til advokater spesialisert på etter mange år som kollegaer og rådgivere i bred forstand.</p>
 </div>
