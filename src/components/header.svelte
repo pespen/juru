@@ -60,9 +60,9 @@
           <a href="/tjenester/advokatç" class="block" on:click={closeServicesMenu}>Advokatråd</a>
         </div>
       </div>
-      <a href="/priser">Priser</a>
-      <a href="/om-oss">Om oss</a>
-      <a href="/kontakt">Kontakt</a>
+      <a href="/pricing">Priser</a>
+      <a href="/about">Om oss</a>
+      <a href="/contact">Kontakt</a>
     </div>
     <div class="md:hidden mr-4">
       <button on:click={toggleMenu} class="focus:outline-none">

@@ -15,7 +15,7 @@
   <div class="flex flex-col min-h-screen bg-light-1">
     <Header />
 
-    <main class="container mx-auto p-4 flex-grow bg-light-1">
+    <main class="container mx-auto p-4 flex-grow bg-light-1 max-w-7xl ">
       <slot />
     </main>
 
