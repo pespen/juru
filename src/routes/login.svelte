@@ -42,7 +42,7 @@
 </script>
 
 {#if !isAuthenticated && isDev}
-  <div class="flex flex-col items-center justify-center min-h-screen bg-light-1">
+  <div class="flex flex-col items-center justify-center min-h-screen">
     <h1 class="text-2xl text-light-6 font-bold mb-4">Skriv inn passord</h1>
     <input type="password" bind:value={password} on:keydown={handleKeydown} class="border p-2 mb-4" />
     <button on:click={handleLogin} class="bg-light-6 text-light-1 p-2">Logg inn</button>

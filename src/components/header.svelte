@@ -40,29 +40,29 @@
   }
 </style>
 
-<header class="bg-light-1 p-4 relative">
+<header class="p-4 relative">
   <nav class="flex items-center justify-between">
-    <a href="/" class="text-3xl ml-4">
+    <a href="/" class="text-3xl ml-4 text-light-6">
       J U R U
     </a>
     <div class="hidden md:flex space-x-10 mr-10">
       <div class="relative" role="menu" tabindex="0" on:mouseenter={showServicesMenu} on:mouseleave={hideServicesMenu}>
-        <span class="cursor-pointer">Tjenester</span>
+        <span class="cursor-pointer text-light-6">Tjenester</span>
         <div class="{isServicesMenuOpen ? 'dropdown-visible' : 'dropdown-hidden'} dropdown-menu absolute bg-light-2 shadow-lg p-4 mt-2 flex flex-col space-y-2" role="menu"  tabindex="0" on:mouseenter={showServicesMenu} on:mouseleave={hideServicesMenu}>
-          <a href="/tjenester/kurs" class="block" on:click={closeServicesMenu}>Kurs og foredrag</a>
-          <a href="/tjenester/coaching" class="block" on:click={closeServicesMenu}>Coaching</a>
-          <a href="/tjenester/cybersikkerhet" class="block" on:click={closeServicesMenu}>Cybersikkerhet</a>
-          <a href="/tjenester/personvern" class="block" on:click={closeServicesMenu}>Personvern</a>
-          <a href="/tjenester/strategi" class="block" on:click={closeServicesMenu}>Strategisk juridisk rådgivning</a>
-          <a href="/tjenester/internasjonalt" class="block" on:click={closeServicesMenu}>Internasjonale forhold</a>
-          <a href="/tjenester/regulering" class="block" on:click={closeServicesMenu}>Regulering</a>
-          <a href="/tjenester/styrearbeid" class="block" on:click={closeServicesMenu}>Styrearbeid</a>
-          <a href="/tjenester/advokatç" class="block" on:click={closeServicesMenu}>Advokatråd</a>
+          <a href="/tjenester/kurs" class="block text-light-6" on:click={closeServicesMenu}>Kurs og foredrag</a>
+          <a href="/tjenester/coaching" class="block text-light-6" on:click={closeServicesMenu}>Coaching</a>
+          <a href="/tjenester/cybersikkerhet" class="block text-light-6" on:click={closeServicesMenu}>Cybersikkerhet</a>
+          <a href="/tjenester/personvern" class="block text-light-6" on:click={closeServicesMenu}>Personvern</a>
+          <a href="/tjenester/strategi" class="block text-light-6" on:click={closeServicesMenu}>Strategisk juridisk rådgivning</a>
+          <a href="/tjenester/internasjonalt" class="block text-light-6" on:click={closeServicesMenu}>Internasjonale forhold</a>
+          <a href="/tjenester/regulering" class="block text-light-6" on:click={closeServicesMenu}>Regulering</a>
+          <a href="/tjenester/styrearbeid" class="block text-light-6" on:click={closeServicesMenu}>Styrearbeid</a>
+          <a href="/tjenester/advokatç" class="block text-light-6" on:click={closeServicesMenu}>Advokatråd</a>
         </div>
       </div>
-      <a href="/pricing">Priser</a>
-      <a href="/about">Om oss</a>
-      <a href="/contact">Kontakt</a>
+      <a href="/pricing" class="text-light-6">Priser</a>
+      <a href="/about" class="text-light-6">Om oss</a>
+      <a href="/contact" class="text-light-6">Kontakt</a>
     </div>
     <div class="md:hidden mr-4">
       <button on:click={toggleMenu} class="focus:outline-none">
