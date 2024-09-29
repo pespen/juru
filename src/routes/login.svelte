@@ -33,12 +33,18 @@
       errorMessage = 'Feil passord';
     }
   }
+
+  function handleKeydown(event: KeyboardEvent) {
+    if (event.key === 'Enter') {
+      handleLogin();
+    }
+  }
 </script>
 
 {#if !isAuthenticated && isDev}
   <div class="flex flex-col items-center justify-center min-h-screen bg-light-1">
     <h1 class="text-2xl text-light-6 font-bold mb-4">Skriv inn passord</h1>
-    <input type="password" bind:value={password} class="border p-2 mb-4" />
+    <input type="password" bind:value={password} on:keydown={handleKeydown} class="border p-2 mb-4" />
     <button on:click={handleLogin} class="bg-light-6 text-light-1 p-2">Logg inn</button>
     {#if errorMessage}
       <p class="text-red-500 mt-2">{errorMessage}</p>
