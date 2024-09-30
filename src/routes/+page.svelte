@@ -2,47 +2,47 @@
 	import ServiceCard from '../components/serviceCard.svelte';
 	const cards = [
 		{
-			image: 'src/assets/services/courses.webp',
+			image: '/images/services/courses.webp',
 			title: 'Kurs og foredrag',
 			link: 'services/courses'
 		},
 		{
-			image: 'src/assets/services/coaching.webp',
+			image: '/images/services/coaching.webp',
 			title: 'Coaching',
 			link: 'services/coaching'
 		},
 		{
-			image: 'src/assets/services/cybersecurity.webp',
+			image: '/images/services/cybersecurity.webp',
 			title: 'Cybersikkerhet',
 			link: 'services/cybersecurity'
 		},
 		{
-			image: 'src/assets/services/privacy.webp',
+			image: '/images/services/privacy.webp',
 			title: 'Personvern',
 			link: 'services/privacy'
 		},
 		{
-			image: 'src/assets/services/strategy.webp',
+			image: '/images/services/strategy.webp',
 			title: 'Strategisk juridisk rådgivning',
 			link: 'services/strategy'
 		},
 		{
-			image: 'src/assets/services/international.webp',
+			image: '/images/services/international.webp',
 			title: 'Internasjonale rettsforhold',
 			link: 'services/international'
 		},
 		{
-			image: 'src/assets/services/regulation.webp',
+			image: '/images/services/regulation.webp',
 			title: 'Regulering',
 			link: 'services/regulation'
 		},
 		{
-			image: 'src/assets/services/boardwork.webp',
+			image: '/images/services/boardwork.webp',
 			title: 'Styrearbeid',
 			link: 'services/boardwork'
 		},
 		{
-			image: 'src/assets/services/legaladvice.webp',
+			image: '/images/services/legaladvice.webp',
 			title: 'Advokatråd',
 			link: 'services/legaladvice'
 		}
