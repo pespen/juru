@@ -32,56 +32,56 @@
 			>
 				<span class="cursor-pointer text-light-6">Tjenester</span>
 				<div
-					class="{isServicesMenuOpen
-						? 'dropdown-visible'
-						: 'dropdown-hidden'} dropdown-menu absolute bg-light-2 shadow-lg p-4 mt-2 flex flex-col space-y-2"
+					class={`${
+						isServicesMenuOpen ? 'block' : 'hidden'
+					} absolute bg-light-2 shadow-lg p-4 mt-2 flex flex-col space-y-2 w-64`}
 					role="menu"
 					tabindex="0"
 					on:mouseenter={showServicesMenu}
 					on:mouseleave={hideServicesMenu}
 				>
 					<a
-						href="/tjenester/kurs"
+						href="/services/courses"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Kurs og foredrag</a
 					>
 					<a
-						href="/tjenester/coaching"
+						href="/services/coaching"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Coaching</a
 					>
 					<a
-						href="/tjenester/cybersikkerhet"
+						href="/services/cybersecurity"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Cybersikkerhet</a
 					>
 					<a
-						href="/tjenester/personvern"
+						href="/services/privacy"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Personvern</a
 					>
 					<a
-						href="/tjenester/strategi"
+						href="/services/strategy"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Strategisk juridisk rådgivning</a
 					>
 					<a
-						href="/tjenester/internasjonalt"
+						href="/services/international"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Internasjonale forhold</a
 					>
 					<a
-						href="/tjenester/regulering"
+						href="/services/regulation"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Regulering</a
 					>
 					<a
-						href="/tjenester/styrearbeid"
+						href="/services/boardwork"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Styrearbeid</a
 					>
 					<a
-						href="/tjenester/advokatç"
+						href="/services/legaladvice"
 						class="block text-light-6"
 						on:click={closeServicesMenu}>Advokatråd</a
 					>
@@ -111,34 +111,13 @@
 		</div>
 	</nav>
 	<div
-		class="{isMenuOpen
-			? 'menu-visible'
-			: 'menu-hidden'} absolute top-16 left-0 right-0 bg-light-2 z-50 flex flex-col items-center space-y-6 p-6 shadow-lg"
+		class={`${
+			isMenuOpen ? 'visible max-h-96' : 'invisible max-h-0'
+		} absolute top-16 left-0 right-0 bg-light-2 z-50 flex flex-col items-center space-y-6 p-6 shadow-lg transition-max-height duration-400 ease`}
 	>
-		<a href="/tjenester" on:click={toggleMenu}>Tjenester</a>
-		<a href="/priser" on:click={toggleMenu}>Priser</a>
-		<a href="/om-oss" on:click={toggleMenu}>Om oss</a>
-		<a href="/kontakt" on:click={toggleMenu}>Kontakt</a>
+		<a href="/services" on:click={toggleMenu}>Tjenester</a>
+		<a href="/pricing" on:click={toggleMenu}>Priser</a>
+		<a href="/about" on:click={toggleMenu}>Om oss</a>
+		<a href="/contact" on:click={toggleMenu}>Kontakt</a>
 	</div>
 </header>
-
-<style>
-	.menu-hidden {
-		visibility: hidden;
-		max-height: 0;
-	}
-	.menu-visible {
-		visibility: visible;
-		max-height: 500px;
-		transition: max-height 0.4s ease;
-	}
-	.dropdown-hidden {
-		display: none;
-	}
-	.dropdown-visible {
-		display: block;
-	}
-	.dropdown-menu {
-		width: 250px;
-	}
-</style>
