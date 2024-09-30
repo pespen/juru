@@ -1,3 +1,54 @@
+<script lang="ts">
+	import ServiceCard from '../components/serviceCard.svelte';
+	const cards = [
+		{
+			image: 'src/assets/services/courses.webp',
+			title: 'Kurs og foredrag',
+			link: 'services/courses'
+		},
+		{
+			image: 'src/assets/services/coaching.webp',
+			title: 'Coaching',
+			link: 'services/coaching'
+		},
+		{
+			image: 'src/assets/services/cybersecurity.webp',
+			title: 'Cybersikkerhet',
+			link: 'services/cybersecurity'
+		},
+		{
+			image: 'src/assets/services/privacy.webp',
+			title: 'Personvern',
+			link: 'services/privacy'
+		},
+		{
+			image: 'src/assets/services/strategy.webp',
+			title: 'Strategisk juridisk rådgivning',
+			link: 'services/strategy'
+		},
+		{
+			image: 'src/assets/services/international.webp',
+			title: 'Internasjonale rettsforhold',
+			link: 'services/international'
+		},
+		{
+			image: 'src/assets/services/regulation.webp',
+			title: 'Regulering',
+			link: 'services/regulation'
+		},
+		{
+			image: 'src/assets/services/boardwork.webp',
+			title: 'Styrearbeid',
+			link: 'services/boardwork'
+		},
+		{
+			image: 'src/assets/services/legaladvice.webp',
+			title: 'Advokatråd',
+			link: 'services/legaladvice'
+		}
+	];
+</script>
+
 <div>
 	<h1 class="text-xl font-bold text-light-6">
 		Hvilke tjenester tilbyr en juridisk direktør i Juru?
@@ -54,4 +105,9 @@
 		til fastsatt pris, slik at du alltid skal vite hva du bruker av penger på
 		dette.
 	</p>
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
+		{#each cards as card}
+			<ServiceCard image={card.image} title={card.title} link={card.link} />
+		{/each}
+	</div>
 </div>
