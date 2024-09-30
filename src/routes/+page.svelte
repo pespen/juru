@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PartnerLogos from '../components/partnerLogos.svelte';
 	import ServiceCard from '../components/serviceCard.svelte';
 	const cards = [
 		{
@@ -110,4 +111,5 @@
 			<ServiceCard image={card.image} title={card.title} link={card.link} />
 		{/each}
 	</div>
+	<PartnerLogos />
 </div>
