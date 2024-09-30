@@ -19,7 +19,7 @@
 			<slot />
 		</main>
 
-		<footer class="p-4 md:p-8 mt-8">
+		<footer class="p-4">
 			<div class="text-center flex flex-col items-center">
 				<hr class="border-gray-300 my-4 w-[60%]" />
 				<p class="text-light-6">
