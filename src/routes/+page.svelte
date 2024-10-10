@@ -10,7 +10,7 @@
 		</h1>
 		<div class="relative">
 			<img
-				src="/images/pwe-headshot.png"
+				src="/images/pwe-headshot.webp"
 				alt="pwe-headshot"
 				class="w-[50%] max-w-[400px] float-right ml-4 mb-4 border border-light-6 rounded-lg shadow-lg"
 			/>

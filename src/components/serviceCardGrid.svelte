@@ -40,12 +40,12 @@
 			image: '/images/services/boardwork.webp',
 			title: 'Styrearbeid',
 			link: 'services/boardwork'
-		},
-		{
-			image: '/images/services/legaladvice.webp',
-			title: 'Advokatråd',
-			link: 'services/legaladvice'
 		}
+		// {
+		// 	image: '/images/services/legaladvice.webp',
+		// 	title: 'Advokatråd',
+		// 	link: 'services/legaladvice'
+		// }
 	];
 </script>
 
