@@ -4,8 +4,10 @@
 	import * as pdfjs from 'pdfjs-dist';
 	// @ts-ignore
 	import * as pdfWorker from 'pdfjs-dist/build/pdf.worker.mjs';
-	pdfjs.GlobalWorkerOptions.workerSrc =
-		import.meta.url + 'pdfjs-dist/build/pdf.worker.mjs';
+	pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+		'pdfjs-dist/build/pdf.worker.mjs',
+		import.meta.url
+	).toString();
 
 	const pdfUrl = '/pwe-cv-pdf.pdf';
 	let pdf: any;
