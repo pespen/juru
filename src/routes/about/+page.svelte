@@ -35,7 +35,7 @@
 		pdf = await pdfjs.getDocument(url).promise;
 		const container = document.getElementById('pdf-render');
 		if (container) {
-			container.innerHTML = ''; // Clear the container before rendering
+			container.innerHTML = '';
 			for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
 				await renderPage(pageNum);
 			}
@@ -46,7 +46,7 @@
 		clearTimeout(resizeTimeout);
 		resizeTimeout = window.setTimeout(() => {
 			renderPDF(pdfUrl);
-		}, 300); // Debounce time in milliseconds
+		}, 300);
 	}
 
 	function preventScroll(event: Event) {
