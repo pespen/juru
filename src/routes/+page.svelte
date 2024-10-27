@@ -73,5 +73,5 @@
 		</p>
 	</div>
 	<ServiceCardGrid />
-	<PartnerLogos />
+	<!-- <PartnerLogos /> -->
 </div>
