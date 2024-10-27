@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
 	// @ts-ignore
-	import * as pdfjs from 'pdfjs-dist';
+	import * as pdfjs from 'pdfjs-dist/legacy/build/pdf';
 	pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
 	const pdfUrl = '/pwe-cv-pdf.pdf';
