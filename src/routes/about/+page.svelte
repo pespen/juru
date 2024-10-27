@@ -2,15 +2,11 @@
 	import { onMount, onDestroy } from 'svelte';
 	// @ts-ignore
 	import * as pdfjs from 'pdfjs-dist';
-	// @ts-ignore
-	import * as pdfWorker from 'pdfjs-dist/build/pdf.worker.mjs';
-	pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-		'pdfjs-dist/build/pdf.worker.mjs',
-		import.meta.url
-	).toString();
+	pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
 	const pdfUrl = '/pwe-cv-pdf.pdf';
 	let pdf: any;
+	let resizeTimeout: number;
 
 	async function renderPage(pageNum: number) {
 		const page = await pdf.getPage(pageNum);
@@ -47,7 +43,10 @@
 	}
 
 	function handleResize() {
-		renderPDF(pdfUrl);
+		clearTimeout(resizeTimeout);
+		resizeTimeout = window.setTimeout(() => {
+			renderPDF(pdfUrl);
+		}, 300);
 	}
 
 	function preventScroll(event: Event) {
